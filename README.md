@@ -14,7 +14,7 @@ A sleek system information fetcher that combines the power of Python and Ruby.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/cobrafetch.git
+git clone https://github.com/mochacinno-dev/COBRAFETCH.git
 cd cobrafetch
 
 # Install Python dependencies
