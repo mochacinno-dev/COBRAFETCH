@@ -1,3 +1,9 @@
+#########################
+# Cobrafetch 0.9.1
+# Resource Information Fetching Module
+# Written by: Camila "Mocha" Rose
+#########################
+
 import cpuinfo
 import subprocess
 import os

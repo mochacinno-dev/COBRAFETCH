@@ -1,3 +1,9 @@
+#########################
+# Cobrafetch 0.9.1
+# Ruby subprocess Module
+# Written by: Camila "Mocha" Rose
+#########################
+
 import os
 import subprocess
 
