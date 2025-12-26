@@ -10,6 +10,7 @@
 [![Python](https://img.shields.io/badge/python-3.6+-blue)](https://www.python.org/)
 [![Ruby](https://img.shields.io/badge/ruby-2.0+-crimson)](https://www.python.org/)
 
+**Available in Windows, Linux and MacOS**
 <div align="left">
 
 ## Features

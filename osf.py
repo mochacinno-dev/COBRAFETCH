@@ -8,6 +8,7 @@
 import platform # For kernel information
 import distro # For Linux distribution information
 import os # For Windows version information
+import sys # For system-specific parameters and functions
 
 def osfetch():
     
@@ -16,13 +17,19 @@ def osfetch():
     kversion = platform.release()
     kid = platform.machine()
 
-    # DISTRO
-    distron = distro.name()
-    did = distro.id()
-    dversion = distro.version()
+    # Check if running on Windows
+    if kernel == "Windows":
+        # Get Windows version info
+        win_ver = platform.version()
+        win_edition = platform.win32_edition() if hasattr(platform, 'win32_edition') else 'Windows'
+        
+        print(f"<=== KERNEL: {kernel} {kversion} {kid}")
+        print(f"<=== OS: {win_edition} {kversion}")
+    else:
+        # DISTRO (Linux)
+        distron = distro.name()
+        did = distro.id()
+        dversion = distro.version()
 
-    # WINDOWS
-
-
-    print(f"<=== KERNEL: {kernel} {kversion} {kid}")
-    print(f"<=== OS: {distron} {dversion} ({did})")
+        print(f"<=== KERNEL: {kernel} {kversion} {kid}")
+        print(f"<=== OS: {distron} {dversion} ({did})")
